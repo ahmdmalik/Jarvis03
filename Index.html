@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Jarvis City</title>
+  </head>
+  <body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-light" id="navlogo">
+          <div class="container-fluid">
+            <a class="navbar-brand">
+              <img src="public/img/logo.png" width="180px" alt="" />
+            </a>
+  
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-light" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div id="navMenu">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <h5>List Produk</h5>
+  
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true" id="list-group">Rumah Tangga</a>
+              <a href="#" class="list-group-item list-group-item-action">Perlengkapan Dapur</a>
+              <a href="#" class="list-group-item list-group-item-action">Meja Makan</a>
+              <a href="#" class="list-group-item list-group-item-action">Sofa Single</a>
+              <a href="#" class="list-group-item list-group-item-action">Sofa Double</a>
+            </div>
+            <br/><br/>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true" id="list-group">Kantor</a>
+              <a href="#" class="list-group-item list-group-item-action">Bangku</a>
+              <a href="#" class="list-group-item list-group-item-action">Meja Kerja</a>
+              <a href="#" class="list-group-item list-group-item-action">Komputer</a>
+              <a href="#" class="list-group-item list-group-item-action">Proyektor</a>
+              <a href="#" class="list-group-item list-group-item-action">Telepon kantor</a>
+            </div>
+          </div>
+          <div class="col-6" id="mainCenter">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="public/img/rumahtangga1.jpg" class="d-block w-100" alt="..."/>
+                </div>
+                <div class="carousel-item">
+                  <img src="public/img/rumahtangga2.jpg" class="d-block w-100" alt="..."/>
+                </div>
+                <div class="carousel-item">
+                  <img src="public/img/rumahtangga3.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-3">
+            <h5>Transaksi atau Pesanan</h5>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Belum Dibayar</div>
+                  Pesanan anda belum dibayar
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Sedang Diproses</div>
+                  Sedang diproses oleh penjual
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Sedang dikirim</div>
+                  Pesanan sedang dikirim
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Diterima</div>
+                  Pesanan sudah diterima
+                </div>
+              </li>
+            </ol>
+            <br/>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1"/>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+              <p><a>Daftar</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <h3>List Produk</h3>
+        <div class="list-produk">
+          <div class="row">
+            <h5>Rumah Tangga</h5>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/rumahtangga1.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">Rumah Tangga 1</h5>
+                  <p class="card-text">Murah dan berkualitas</p>
+                  <p>Rp.250.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/rumahtangga2.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">Rumah tangga 2</h5>
+                  <p class="card-text">Murahh dan berkualitas</p>
+                  <p>Rp.200.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/rumahtangga3.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">Rumah Tangga 3</h5>
+                  <p class="card-text">Murah dan berkualitas</p>
+                  <p>Rp.150.000,-</p>
+                  <a href="#" class="btn">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/rumahtangga4.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">Rumah Tangga 4</h5>
+                  <p class="card-text">Murah dan berkualitas</p>
+                  <p>Rp.150.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <h5>Perlengkapan Kantor</h5>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/kantor1.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">kantor 1</h5>
+                  <p class="card-text">awet dan tahan lama</p>
+                  <p>Rp.300.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/kantor2.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">kantor 2</h5>
+                  <p class="card-text">awet dan tahan lama</p>
+                  <p>Rp.200.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/kantor3.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">kantor 3</h5>
+                  <p class="card-text">awet dan tahan lama</p>
+                  <p>Rp.150.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img src="public/img/kantor4.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">kantor 4</h5>
+                  <p class="card-text">awet dan tahan lama</p>
+                  <p>Rp.400.000,-</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
